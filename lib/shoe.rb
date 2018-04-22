@@ -6,10 +6,11 @@ class Shoe
   end
   def cobble( :condition)
     puts "Your shoe is as good as new!"
+    shoe.condition = "old"
+    shoe.cobble
   end
 end
-shoe.condition = "old"
-shoe.cobble
+
 #new = Shoe.new
 #new.condition = "new"
 #shoe.condition = new
